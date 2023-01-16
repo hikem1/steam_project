@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<div class="text-light rounded-3 m-auto w-50 shd">
+    <div class="bg-dark bg-gradient p-1 h-25 rounded-top border-1 border-bottom border-dark">
+        <h3 class="text-center text-light">Register</h3>
+
+    </div>
+    <div class="p-3 rounded-bottom bg-grey-light">
+        {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.pseudo) }}
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.plainPassword, {label: 'Password'}) }}
+        {{ form_row(registrationForm.agreeTerms) }}
+        <button type="submit" class="btn btn-primary mt-4">Register</button>
+        {{ form_end(registrationForm) }}
+    </div>
+
+</div>
+{% endblock %}

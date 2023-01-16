@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Game{% endblock %}
+
+{% block body %}
+    <a href="{{ path('app_home') }}">back to list</a>
+    <h1 class="mt-5">{{ game.name }}</h1>
+    <div class="d-flex m-auto bg-grey-light rounded p-3 shd">
+        <div class="position-relative">
+            <img class="img-show" src="{{ game.imageName }}" alt="">
+            <span class="bg-black text-warning px-2 rounded-start position-absolute bottom-0 end-0">{{ game.price ~ ' Euros'}}</span>
+        </div>
+
+        <div class="ms-5 d-flex flex-column  justify-content-between">
+            <span>Description :</span>
+            <p class="font-martel">{{ game.description }}</p>
+            <div>
+                <span>Genre :</span>
+                <span class="font-martel">{{ game.genre }}</span>
+            </div>
+        </div>
+    </div>
+{% endblock %}

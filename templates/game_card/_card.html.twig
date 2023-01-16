@@ -1,0 +1,16 @@
+<div class="card-game d-flex flex-column justify-content-between m-auto text-dark bg-grey-light py-3 shd mx-4 mt-4 rounded">
+    <div class="game-image rounded-top">
+        <img src="{{ game.imageName }}" class="rounded-top" alt="...">
+    </div>
+
+    <div class="text-light bg-grey-light">
+        <div class="border-top border-light">
+            <h4 class="text-center mt-2">{{ game.name }}</h4>
+            <p class="card-text font-martel fs-6 text-center">{{ game.genre }}</p>
+        </div>
+        <div class="d-flex justify-content-between mt-4">
+            <a href="{{ path('app_game_show',{'id': game.id}) }}" class="btn btn-primary shd">Détails</a>
+            <p class="text-warning m-0">{{ game.price ~ ' €'}}</p>
+        </div>
+    </div>
+</div>

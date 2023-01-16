@@ -1,0 +1,63 @@
+//define some bootstrap scss variables here
+//$white: #fff;
+@import "~bootstrap/scss/bootstrap";
+
+body{
+  background: rgb(74,74,74);
+  background: linear-gradient(90deg, rgba(74,74,74,1) 0%, rgba(0,33,60,1) 100%);
+}
+
+.bd-grad{
+  border-bottom: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, rgba(0,33,60,0) 10%, rgba(255,193,7,1));
+}
+
+.font-passion{
+  font-family: 'Passion One', cursive;
+  font-size: 1.5em;
+}
+
+.font-alegrya{
+  font-family: 'Alegrya Sans', cursive;
+  font-style: italic;
+}
+
+.font-martel{
+  font-family: 'Martel Sans', cursive;
+}
+
+.shd{
+  box-shadow: 5px 7px 7px -1px #000000;
+}
+
+.bg-grey-light{
+  background-color: rgb(41, 56, 68);
+}
+
+.btn-width-fixe{
+  width: 100px;
+}
+
+.img-show{
+  width: 300px;
+}
+
+.card-game{
+  width: 250px;
+}
+
+.game-image{
+  height:270px;
+}
+
+.card-game img{
+  width: 100%;
+  object-fit:fill;
+}
+
+
+
+
+
+
